@@ -1,0 +1,69 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global body */
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9a2;
+    color: #222;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #222;
+    overflow: hidden; /* Fix float issues */
+}
+
+/*navbar links */
+.navbar a {
+    float: left; /* Align horizontally */
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+/* moving mouse over the link */
+.navbar a:hover {
+    background: #444;
+}
+
+/* Main Content Area */
+.content {
+    padding: 20px;
+}
+
+/* Float Example: Image + Text Side by Side */
+.float-box img {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin: 0 15px 15px 0;
+    border: 2px solid #333;
+    border-radius: 6px;
+}
+
+.float-box p {
+    overflow: hidden; /* Clears float within this block */
+}
+
+/* Gallery */
+.gallery img {
+    float: left;
+    width: 180px;
+    height: auto;
+    margin: 10px;
+    border: 2px solid #333;
+    border-radius: 6px;
+}
+
+/* Clearfix (for fixing floated elements breaking layout) */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
